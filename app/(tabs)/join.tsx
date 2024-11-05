@@ -1,12 +1,13 @@
 import { StyleSheet, View, Text, Button } from "react-native";
-import { useState } from "react";
 
-export default function CreateScreen({ navigation }) {
+export default function JoinPage() {
+  const onClick = () => {
+    console.log("Join is in progress.");
+  };
   return (
     <View style={styles.container}>
-      <Text>Create</Text>
-      <Button title="New Group" />
-      <Button title="Sign Up" onPress={() => navigation.navigate("Sign Up")} />
+      <Text>Join</Text>
+      <Button onPress={onClick} title="Join" />
     </View>
   );
 }

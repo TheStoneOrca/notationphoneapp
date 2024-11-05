@@ -1,12 +1,10 @@
 import { StyleSheet, View, Text, Button } from "react-native";
-import { useState } from "react";
 
-export default function CreateScreen({ navigation }) {
+export default function NotesScreen() {
   return (
     <View style={styles.container}>
-      <Text>Create</Text>
-      <Button title="New Group" />
-      <Button title="Sign Up" onPress={() => navigation.navigate("Sign Up")} />
+      <Text>Notes</Text>
+      <Button title="New Note" />
     </View>
   );
 }
